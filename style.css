@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;  /* Liste işaretlerini kaldırır */
+    margin: 0;              /* Varsayılan margin değerlerini sıfırlar */
+    padding: 0;             /* Varsayılan padding değerlerini sıfırlar */
+    overflow: hidden;       /* Taşma durumunda içerikleri gizler */
+    background-color: #333; /* Menü çubuğunun arka plan rengini ayarlar */
+    text-align: center;       /* Menü öğelerini ortaya hizalar */
+    height: 155px;             /* Menü çubuğunun yüksekliği */
+    display: flex;            /* Flexbox yapısını etkinleştirir */
+    align-items: center;      /* Dikeyde (yukarı-aşağı) ortalama */
+    justify-content: center;  /* Yatayda (sol-sağ) ortalama */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111; /* Üzerine gelindiğinde arka plan rengi değişir */
+}
+
+nav ul li:first-child {
+    float: left;            /* İlk öğeyi sola hizalar */
+}
+
+section {
+    padding: 20px;
+    flex-grow: 1;
+    
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
